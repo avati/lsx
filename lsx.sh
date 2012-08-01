@@ -9,4 +9,6 @@ fi
 
 make lsx
 
+echo 3 > /proc/sys/vm/drop_caches
+
 strace -Tc ./lsx $dir
